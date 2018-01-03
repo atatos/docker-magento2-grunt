@@ -1,9 +1,4 @@
-FROM php 
-
-RUN apt-get update && apt-get install -y \
-        curl 
-
-RUN apt-get install -y nodejs
+FROM library/node
 
 RUN npm install -g grunt-cli
 
