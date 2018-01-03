@@ -1,5 +1,4 @@
-FROM ecg/magento2-php-fpm:v1 
-MAINTAINER Gordon Knoppe <gknoppe@magento.com>
+FROM php 
 
 RUN apt-get update && apt-get install -y \
         curl 
