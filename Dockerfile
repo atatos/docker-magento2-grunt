@@ -10,7 +10,10 @@
 
 FROM library/php
 
-RUN apt-get update && apt-get install -y -q nodejs && apt-get install npm
+RUN apt-get install curl python-software-properties
+RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
+RUN apt-get update
+RUN apt-get install -g nodejs
 
 RUN npm install --g grunt-cli
 
