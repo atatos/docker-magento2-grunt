@@ -10,7 +10,7 @@
 
 FROM library/php
 
-RUN sudo apt-get install -y -q nodejs
+RUN sudo apt-get update && sudo apt-get install -y -q nodejs
 
 RUN sudo npm install --g grunt-cli
 
