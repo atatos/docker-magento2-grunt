@@ -10,7 +10,7 @@
 
 FROM library/php
 
-RUN apt-get update && apt-get install -y -q nodejs
+RUN apt-get update && apt-get install -y -q nodejs && apt-get install npm
 
 RUN npm install --g grunt-cli
 
