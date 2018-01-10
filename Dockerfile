@@ -1,4 +1,4 @@
-FROM snooxy/php7-fpm
+FROM richarvey/nginx-php-fpm
 RUN apk add --update nodejs nodejs-npm
 RUN apk --update add \
         wget \
